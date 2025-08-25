@@ -2,9 +2,9 @@ import React from "react";
 
 function ProductDetails() {
   return (
-    <div>
-      <h2>Product Details</h2>
-      <p>Chocolate Cake - Rich and creamy chocolate flavor, ₹500</p>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>🍰 Product Details Page</h1>
+      <p>Yaha par hum specific product ka detail dikhayenge.</p>
     </div>
   );
 }

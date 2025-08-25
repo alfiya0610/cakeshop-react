@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ProductList() {
   return (
     <div>
-      <h2>Product List</h2>
+      <h1>Our Cakes</h1>
       <ul>
-        <li>Chocolate Cake</li>
-        <li>Vanilla Cake</li>
-        <li>Red Velvet Cake</li>
+        <li>
+          Chocolate Cake
+          <Link to="/product-details"><button>View Details</button></Link>
+        </li>
       </ul>
     </div>
   );

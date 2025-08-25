@@ -14,20 +14,33 @@ function App() {
       <h2>Our Cakes</h2>
       <ul style={{ listStyle: "none", padding: 0 }}>
         {products.map((product, index) => (
-          <li 
-            key={index} 
-            style={{ 
-              margin: "15px auto", 
-              padding: "10px", 
-              border: "1px solid #ccc", 
-              borderRadius: "10px", 
-              width: "300px", 
-              background: "#f9f9f9" 
+          <li
+            key={index}
+            style={{
+              margin: "15px auto",
+              padding: "10px",
+              border: "1px solid #ccc",
+              borderRadius: "10px",
+              width: "300px",
+              background: "#f9f9f9"
             }}
           >
             <h3>{product.name}</h3>
             <p>{product.description}</p>
             <p><b>Price:</b> ₹{product.price}</p>
+            <button 
+              style={{
+                background: "#ff6f61",
+                color: "white",
+                border: "none",
+                borderRadius: "5px",
+                padding: "8px 12px",
+                cursor: "pointer"
+              }}
+              onClick={() => alert(`Details of ${product.name}: ${product.description}, Price ₹${product.price}`)}
+            >
+              View Details
+            </button>
           </li>
         ))}
       </ul>
